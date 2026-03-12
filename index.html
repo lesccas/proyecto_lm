@@ -6,17 +6,58 @@
     <title>PradaF</title>
   </head>
   <body>
+    <!-- PANTALLA DE INICIO -->
     <header>
-      <h1>Eneba Clone</h1>
-      <form>
-        <input type="text" />
-        <button></button>
-      </form>
+      <div class="logo-area">
+        <h1>Eneba Clone</h1>
+      </div>
+      <div class="buscador-area">
+        <form>
+          <input
+            type="search"
+            name="search"
+            class="search-input"
+            placeholder="Buscar producto..."
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <nav class="usuario-area">
+        <a href="index.html" class="tienda-link">Tienda</a>
+        <a href="#" class="carrito-link">Carrito</a>
+        <a href="#" class="login-link">Login</a>
+      </nav>
     </header>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="portada">
+        <h2>Encabezado 2</h2>
+        <p>Productos de...</p>
+        <button class="tienda-button">Explorar tienda</button>
+      </section>
+      <section class="categorias-populares">
+        <h3>Categorías Populares</h3>
+        <div class="botones-populares">
+          <button>Marca1</button>
+          <button>Marca2</button>
+          <button>Marca3</button>
+          <button>Marca4</button>
+        </div>
+      </section>
+      <section class="ofertas-destacadas">
+        <h3>Ofertas destacadas</h3>
+        <div class="grid-ofertas">
+          <div class="tarjeta-oferta">
+            <img src="#" alt="producto1" class="imagen-producto1" />
+            <div class="info-producto">
+              <h4>Nombre producto</h4>
+              <div class="precios">
+                <span class="precio-original"></span>
+                <span class="precio-descuento"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
