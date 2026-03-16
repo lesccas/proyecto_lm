@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f6f5ec;
+}
+header {
+  padding: 10px 30px;
+  background-color: #cdc99a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logo-area {
+  grid-column: 1;
+}
+#buscador-area {
+  grid-column: 2;
+  justify-items: center;
+}
+#usuario-area {
+  grid-column: 3;
+  justify-content: end;
+}
+
+main {
+  padding: 10px 30px;
+}
