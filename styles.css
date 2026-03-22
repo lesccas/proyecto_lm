@@ -82,3 +82,28 @@ h1 span {
 }
 
 /* MAIN */
+main {
+  padding: 20px 100px;
+}
+
+.portada {
+  border: 1px solid;
+  border-radius: 18px;
+  border-color: #1d1d1f;
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: rgb(112, 145, 93);
+}
+
+.tienda-link {
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid;
+  border-radius: 999px;
+  text-decoration: none;
+  color: black;
+}
