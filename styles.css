@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+  font-family: "Google Sans", sans-serif;
 }
 
 body {
@@ -27,8 +26,7 @@ header {
 }
 h1 span {
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: lighter;
+  font-weight: bold;
   color: rgb(127, 124, 124);
 }
 
@@ -37,18 +35,42 @@ h1 span {
   max-width: 460px;
   position: relative;
 }
+.buscador-area span {
+  color: #9e9e9e;
+  position: absolute;
+  left: 12px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #9e9e9e;
+  font-size: 20px;
+}
 
 .buscador-area input {
   height: 36px;
-  border: 1.5px;
+  border: 1.5px solid transparent;
   border-radius: 18px;
   padding: 0 14px 0 36px;
   background-color: rgba(232, 226, 226, 0.262);
 }
 
-.buscador-area input:focus {
-  border: none;
+.buscador-area input:focus-within {
+  outline: none;
+  background-color: #ffffff;
+  border-color: rgb(76, 100, 62);
+  transition: all 0.3s ease; /* Para que el cambio sea suave */
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* .buscador-area input:active {
+  border: none;
+} */
 
 .usuario-area a {
   display: inline-flex;
@@ -89,40 +111,91 @@ h1 span {
 /* MAIN */
 main {
   padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .portada {
   border: 1px solid;
   border-radius: 18px;
-  border-color: #1d1d1f;
-  padding: 20px;
+  border-color: #d2d2d7;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Fondo portada */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url("assets/portadaPF.png");
+  background-size: cover;
+  background-position: center;
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  color: rgb(112, 145, 93);
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h2 > span {
+  color: rgb(76, 100, 62);
+}
+
+p {
+  line-height: 1.5;
 }
 
 .tienda-link {
-  gap: 6px;
-  padding: 8px 14px;
-  border: 1px solid;
   border-radius: 999px;
+  padding: 8px 14px;
+  width: 140px;
+  background-color: rgb(76, 100, 62);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  color: black;
-  background-color: rgb(238, 199, 162);
+  gap: 8px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 .botones-populares {
-  border: 1px solid;
-  border-radius: 18px;
-  background-color: rgba(140, 193, 109, 0.371);
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
 }
 
-.ofertas-destacadas {
-  border: 1px solid;
-  border-radius: 18px;
+.botones-populares a {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid #d2d2d7;
+  background-color: white;
+}
+
+.botones-populares img {
+  height: 100px;
+  width: auto;
+}
+
+.botones-populares a:hover {
+  transform: translateY(-5px);
+  border: 1px solid #d2d2d7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bloque-ofertas {
+  display: flex;
+}
+.grid-ofertas {
+  border: 1.5px solid;
+  border-radius: 18px;
 }
