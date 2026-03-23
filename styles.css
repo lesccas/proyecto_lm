@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -106,4 +111,18 @@ h2 {
   border-radius: 999px;
   text-decoration: none;
   color: black;
+  background-color: rgb(238, 199, 162);
+}
+
+.botones-populares {
+  border: 1px solid;
+  border-radius: 18px;
+  background-color: rgba(140, 193, 109, 0.371);
+  display: flex;
+}
+
+.ofertas-destacadas {
+  border: 1px solid;
+  border-radius: 18px;
+  display: flex;
 }
