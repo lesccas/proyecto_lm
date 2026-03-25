@@ -8,23 +8,42 @@
   <body>
     <header>
       <div class="logo-area">
-        <h1>Eneba Clone</h1>
+        <a></a>
+        <h1 class="titulo">Prada Farma<br /><span>FARMACIA PRADA</span></h1>
       </div>
       <div class="buscador-area">
-        <form>
+        <form action="buscar" method="get" class="buscador-farmacia">
+          <span class="material-symbols-outlined">search</span>
           <input
-            type="search"
-            name="search"
+            type="text"
+            name="q"
             class="search-input"
-            placeholder="Buscar producto..."
+            placeholder="Buscar producto, marca..."
           />
           <button type="submit">Buscar</button>
         </form>
       </div>
       <nav class="usuario-area">
-        <a href="index.html" class="tienda-link">Tienda</a>
-        <a href="#" class="carrito-link">Carrito</a>
-        <a href="#" class="login-link">Login</a>
+        <a href="#" class="login-link"
+          ><span
+            ><img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/forma-thin/24/user.png"
+              alt="user"
+            />
+          </span>
+          Acceso</a
+        >
+        <a href="#" class="cesta-link"
+          ><img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/pulsar-line/48/shopping-cart.png"
+            alt="shopping-cart"
+          />
+          Cesta</a
+        >
       </nav>
     </header>
     <main>
