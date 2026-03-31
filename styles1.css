@@ -79,7 +79,7 @@ h3 {
 .bloque-ofertas {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 10px;
 }
 
 .tarjeta-ofertas {

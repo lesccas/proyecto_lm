@@ -123,3 +123,8 @@ footer {
   display: flex;
   align-items: center;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
