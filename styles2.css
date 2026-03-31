@@ -7,3 +7,55 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
+.tarjeta-producto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  margin: 50px 100px;
+  padding: 18px 50px;
+  gap: 50px;
+  border: 1px solid #d2d2d7;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.datos-producto {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.precio {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5;
+  font-size: 20px;
+}
+
+.tarjeta-producto button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 999px;
+  background-color: rgb(76, 100, 62);
+  color: white;
+  font-size: 16px;
+}
+.tarjeta-producto button:hover {
+  background-color: rgb(66, 88, 54);
+}
+
+.descripcion-producto {
+  margin-top: 20px;
+  line-height: 2;
+}
