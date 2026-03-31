@@ -1,66 +1,89 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Producto</title>
+    <title>Tienda</title>
   </head>
   <body>
     <header>
       <div class="logo-area">
-        <a></a>
-        <h1 class="titulo">Prada Farma<br /><span>FARMACIA PRADA</span></h1>
+        <h1>Eneba Clone</h1>
       </div>
       <div class="buscador-area">
-        <form action="buscar" method="get" class="buscador-farmacia">
-          <span class="material-symbols-outlined">search</span>
+        <form>
           <input
-            type="text"
-            name="q"
+            type="search"
+            name="search"
             class="search-input"
-            placeholder="Buscar producto, marca..."
+            placeholder="Buscar producto..."
           />
           <button type="submit">Buscar</button>
         </form>
       </div>
       <nav class="usuario-area">
-        <a href="#" class="login-link"
-          ><span
-            ><img
-              width="24"
-              height="24"
-              src="https://img.icons8.com/forma-thin/24/user.png"
-              alt="user"
-            />
-          </span>
-          Acceso</a
-        >
-        <a href="#" class="cesta-link"
-          ><img
-            width="48"
-            height="48"
-            src="https://img.icons8.com/pulsar-line/48/shopping-cart.png"
-            alt="shopping-cart"
-          />
-          Cesta</a
-        >
+        <a href="index.html" class="tienda-link">Tienda</a>
+        <a href="#" class="carrito-link">Carrito</a>
+        <a href="#" class="login-link">Login</a>
       </nav>
     </header>
     <main>
-      <a href="">Volver a la tienda</a>
-      <section>
-        <img src="" alt="Producto1" />
-        <h2>Nombre del producto</h2>
-        <div>
-          <p>Precio</p>
-          <p>Precio descuento</p>
-          <button type="button">Añadir al carrito</button>
+      <h1>Catálogo de Juegos</h1>
+      <!-- Catálogo -->
+      <div class="producto1">
+        <section>
+          <img src="" alt="Producto1" />
+          <h2>Nombre del producto</h2>
+          <div>
+            <p>Precio</p>
+            <p>Precio descuento</p>
+            <button type="button">Añadir al carrito</button>
+          </div>
+          <div>
+            <h3>Descripción</h3>
+            <p>Descripción del producto...</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Filtro lateral -->
+      <div class="filtro-lateral">
+        <div class="filtro-plataforma">
+          <h3>Plataforma</h3>
+          <hr />
+          <div class="opciones-filtro">
+            <label>
+              <input type="radio" name="plataforma" value="todas" checked />
+              Todas
+            </label>
+            <label>
+              <input type="radio" name="plataforma" value="pc" />
+              Marca1
+            </label>
+            <label>
+              <input type="radio" name="plataforma" value="ps5" />
+              Marca2
+            </label>
+            <label>
+              <input type="radio" name="plataforma" value="xbox" />
+              Xbox
+            </label>
+            <label>
+              <input type="radio" name="plataforma" value="switch" />
+              Switch
+            </label>
+          </div>
         </div>
-        <div>
-          <h3>Descripción</h3>
-          <p>Descripción del producto...</p>
+        <div class="filtro-precio">
+          <h3>Precio (€)</h3>
+          <hr />
+          <div class="rango-precio">
+            <input type="text" id="precio-min" placeholder="Min" min="0" />
+            <span>-</span>
+            <input type="text" id="precio-max" placeholder="Max" min="0" />
+          </div>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
