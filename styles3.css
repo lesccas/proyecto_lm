@@ -1,0 +1,36 @@
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  justify-content: left;
+}
+
+aside {
+  grid-column: 1;
+  justify-items: start;
+  border: 1px solid #d2d2d7;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 0;
+  height: fit-content;
+  background-color: white;
+}
+
+h3 {
+  justify-content: left;
+}
+
+.opciones-filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.catalogo-productos {
+  grid-column: 2;
+  gap: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

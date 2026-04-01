@@ -116,6 +116,45 @@ main {
   gap: 25px;
 }
 
+h3 {
+  font-size: 30px;
+  padding: 0 50px;
+}
+
+.tarjeta-producto {
+  border: 1.5px solid #d2d2d7;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 0 50px;
+  height: 320px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  border: 1px solid #d2d2d7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tarjeta-producto img {
+  height: 200px;
+  width: auto;
+}
+
+.precios {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.precio-original {
+  color: green;
+}
+
 /* FOOTER */
 footer {
   padding: 20px 100px;
