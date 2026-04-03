@@ -7,17 +7,26 @@
 
 aside {
   grid-column: 1;
-  justify-items: start;
   border: 1px solid #d2d2d7;
   border-radius: 18px;
   padding: 20px;
   margin: 0;
   height: fit-content;
+  width: 200px;
   background-color: white;
 }
 
 h3 {
-  justify-content: left;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d2d2d7;
+  margin: 10px 0;
 }
 
 .opciones-filtro {
@@ -26,11 +35,41 @@ h3 {
   gap: 10px;
 }
 
+.rango-precio input {
+  width: 80px;
+  border: 1px solid #d2d2d7;
+  padding: 5px;
+}
+
 .catalogo-productos {
   grid-column: 2;
-  gap: 20px;
+  gap: 60px;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tarjeta-producto-tienda {
+  border: 1.5px solid #d2d2d7;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 0 50px;
+  height: 320px;
+  width: 200px;
+  background-color: white;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.tarjeta-producto-tienda:hover {
+  transform: translateY(-5px);
+  border: 1px solid #d2d2d7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tarjeta-producto-tienda img {
+  height: 200px;
+  width: auto;
 }
