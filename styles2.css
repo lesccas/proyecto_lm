@@ -42,6 +42,17 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 .favorito {
   fill: #d2d2d7;
   border: none;
