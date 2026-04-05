@@ -174,7 +174,7 @@ a {
 /* MODAL */
 /* Fondo del modal - solo difumina lo que está debajo del header */
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -231,11 +231,12 @@ a {
 }
 
 .modal-content input {
-  /* width: 100%; */
+  width: 100%;
+  box-sizing: border-box; /* Para incluir el padding en el ancho total */
   padding: 12px 15px;
   margin-bottom: 20px;
   border: 1.5px solid #d2d2d7;
-  border-radius: 8px;
+  border-radius: 18px;
 }
 
 .modal-content button {
