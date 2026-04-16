@@ -1,3 +1,9 @@
+/* variables */
+:root {
+  --cl-primary: #4c643e;
+  --cl-border: #d2d2d7;
+}
+
 /* MAIN */
 .portada {
   border: 1px solid;
@@ -16,14 +22,14 @@
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 5rem;
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 h2 > span {
-  color: rgb(76, 100, 62);
+  color: var(--cl-primary);
 }
 
 p {
@@ -34,8 +40,8 @@ p {
   border-radius: 999px;
   padding: 8px 14px;
   width: 140px;
-  background-color: rgb(76, 100, 62);
-  color: rgb(255, 255, 255);
+  background-color: var(--cl-primary);
+  color: white;
   text-decoration: none;
   gap: 8px;
 }
@@ -57,7 +63,7 @@ p {
   height: 100px;
   padding: 20px;
   border-radius: 18px;
-  border: 1px solid #d2d2d7;
+  border: 1px solid var(--cl-border);
   background-color: white;
 }
 
@@ -68,7 +74,7 @@ p {
 
 .botones-populares a:hover {
   transform: translateY(-5px);
-  border: 1px solid #d2d2d7;
+  border: 1px solid var(--cl-border);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
